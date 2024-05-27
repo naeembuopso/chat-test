@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Window</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="chat-icon" onclick="openChat()">
+        <img src="images/chat-icon.png" alt="Chat Icon">
+    </div>
+
+    <div id="chat-window" class="hidden">
+        <div id="chat-header">
+            <button onclick="closeChat()">Back</button>
+            <div id="chat-title">
+                <img src="images/doctor.png" alt="Doctor">
+                <div>
+                    <h3>Dr. Puru Dhawan AI</h3>
+                    <p>Ask any question regarding Kidney Failure</p>
+                </div>
+            </div>
+        </div>
+        <div id="chat-body">
+            <div class="message received">
+                <p>Hello! Dr. Puru Dhawan AI</p>
+                <span class="time">09:25 AM</span>
+            </div>
+        </div>
+        <div id="chat-input">
+            <input type="text" id="message" placeholder="Message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
